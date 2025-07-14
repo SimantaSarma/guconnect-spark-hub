@@ -43,7 +43,7 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-hero-pattern">
+    <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -80,17 +80,17 @@ const Index = () => {
           </div>
 
           {/* Floating Icons */}
-          <div className="absolute top-20 left-10 animate-float">
+          <div className="absolute top-20 left-10 animate-float hidden lg:block">
             <div className="p-3 bg-blue-100 rounded-full">
               <BookOpen className="h-6 w-6 text-blue-600" />
             </div>
           </div>
-          <div className="absolute top-32 right-16 animate-float" style={{ animationDelay: '1s' }}>
+          <div className="absolute top-32 right-16 animate-float hidden lg:block" style={{ animationDelay: '1s' }}>
             <div className="p-3 bg-green-100 rounded-full">
               <Target className="h-6 w-6 text-green-600" />
             </div>
           </div>
-          <div className="absolute bottom-20 left-20 animate-float" style={{ animationDelay: '2s' }}>
+          <div className="absolute bottom-20 left-20 animate-float hidden lg:block" style={{ animationDelay: '2s' }}>
             <div className="p-3 bg-purple-100 rounded-full">
               <Network className="h-6 w-6 text-purple-600" />
             </div>
@@ -99,7 +99,7 @@ const Index = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-white/50 backdrop-blur-sm">
+      <section className="py-16 bg-card">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             {stats.map((stat, index) => (
@@ -132,7 +132,7 @@ const Index = () => {
             {features.map((feature, index) => (
               <Card 
                 key={index} 
-                className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-white/80 backdrop-blur-sm border-0 shadow-md animate-fade-in-up"
+                className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 animate-fade-in-up"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <CardContent className="p-0">
