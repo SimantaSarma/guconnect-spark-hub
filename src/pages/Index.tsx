@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -51,7 +50,7 @@ const Index = () => {
             <div className="animate-fade-in-up">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6">
                 Welcome to{' '}
-                <span className="bg-university-gradient bg-clip-text text-transparent">
+                <span className="bg-background text-background">
                   GUConnect
                 </span>
               </h1>
