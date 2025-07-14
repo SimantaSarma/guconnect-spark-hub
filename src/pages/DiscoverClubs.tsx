@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -9,7 +8,7 @@ import { Label } from '@/components/ui/label';
 import { 
   Sparkles, 
   Loader2, 
-  Robot, 
+  Bot, 
   Users, 
   Code, 
   Palette,
@@ -145,7 +144,7 @@ Based on what you've shared, here are some clubs that would be perfect for you:
           <Card className="mb-8 border-2 border-blue-200 bg-blue-50">
             <CardHeader>
               <CardTitle className="flex items-center text-blue-800">
-                <Robot className="mr-2 h-5 w-5" />
+                <Bot className="mr-2 h-5 w-5" />
                 Gemini AI Setup (Optional)
               </CardTitle>
             </CardHeader>
@@ -236,7 +235,7 @@ Based on what you've shared, here are some clubs that would be perfect for you:
           <Card className="mb-8 shadow-lg border-l-4 border-l-primary">
             <CardHeader>
               <CardTitle className="flex items-center text-primary">
-                <Robot className="mr-2 h-6 w-6" />
+                <Bot className="mr-2 h-6 w-6" />
                 Recommended for You by Gemini AI 🤖
               </CardTitle>
             </CardHeader>
