@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -50,7 +51,7 @@ const Index = () => {
             <div className="animate-fade-in-up">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6">
                 Welcome to{' '}
-                <span className="bg-background text-background">
+                <span className="bg-university-gradient bg-clip-text text-transparent font-extrabold">
                   GUConnect
                 </span>
               </h1>
@@ -147,6 +148,33 @@ const Index = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Technologies Used Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/30">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-foreground mb-8">
+            Built with Modern Technologies
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="p-4 bg-card rounded-lg shadow-sm">
+              <h3 className="font-semibold text-primary mb-2">React</h3>
+              <p className="text-sm text-muted-foreground">UI Framework</p>
+            </div>
+            <div className="p-4 bg-card rounded-lg shadow-sm">
+              <h3 className="font-semibold text-primary mb-2">TypeScript</h3>
+              <p className="text-sm text-muted-foreground">Type Safety</p>
+            </div>
+            <div className="p-4 bg-card rounded-lg shadow-sm">
+              <h3 className="font-semibold text-primary mb-2">Tailwind CSS</h3>
+              <p className="text-sm text-muted-foreground">Styling</p>
+            </div>
+            <div className="p-4 bg-card rounded-lg shadow-sm">
+              <h3 className="font-semibold text-primary mb-2">Vite</h3>
+              <p className="text-sm text-muted-foreground">Build Tool</p>
+            </div>
           </div>
         </div>
       </section>
